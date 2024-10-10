@@ -1,18 +1,65 @@
 @font-face {
     font-family: "Glyseric";
-    src: url('Glyseric.woff') format('woff'), /* Modern Browsers */
-         url('Glyseric.woff2') format('woff2'), /* Modern Browsers */
+    src: url('../fonts/Glyseric.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/Glyseric.woff2') format('woff2'), /* Modern Browsers */
          url('Glyseric.otf') format('opentype'); /* Safari, Android, iOS */
              font-style: normal;
     font-weight: normal;
     text-rendering: optimizeLegibility
 }
 
-h1 {
+h1, h2 {
     font-family: "Glyseric";
-    font-size: 50px;
+}
+
+h3, h4, span, p, a{
+    font-family: "Montserrat", sans-serif;
+}
+
+h1, h2, h3, h4, span, p {
     color: #3300cc;
-    width: 50%;
+}
+
+h1 {
+    font-size: 50px;
+    width: 70%;
+}
+
+h2 {
+    font-size: 30px;
+    margin-bottom: 0;
+    line-height: 1.2;
+}
+
+h3 {
+    font-weight: 800;
+    font-size: 30px;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+h4 {
+    font-weight: 800;
+    font-size: 20px;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+p {
+    font-weight: 300;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+a {
+    color: #dfd8ce;
+    font-size: 14px;
+}
+
+span {
+    font-weight: 500;
+    margin-bottom: 0;
+    margin-top: 0;
 }
 
 body {
@@ -23,14 +70,225 @@ body {
 
 body main {
     width: 320px;
-    height: 4000px;
-    border: black 1px solid;
+    height: 6000px;
     padding: 0;
     margin: 0;
+    display: flex;
+    flex-direction: column;
 }
 
 body main header {
     padding: 0px 40px 0px 40px;
+    height: 150px;
+    display: flex;
+}
+
+body main header nav {
+    width: 30%;
+    margin-left: auto;
+    display: flex;
+}
+
+body main header nav img {
+    width: 40%;
+    justify-items: center;
+    margin-left: auto;
+}
+
+body main .hero {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+body main .hero div {
+    height: 320px;
+    background-image: url("../img/Sara_Arredondo.png");
+    background-size: cover;
+}
+
+body main .hero article {
+    padding: 10px 20px 15px 40px;
+}
+
+.button-style {
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    background-color: #3300cc;
+    color: #dfd8ce;
+    border: none;
+}
+
+body main .quote {
+    height: 400px;
+    padding: 0px 40px 0px 40px;
+}
+
+body main .what-i-know {
+    height: 800px;
+    display: flex;
+    flex-direction: column;
+}
+
+.description {
+    height: 280px;
+    padding: 10px 40px 10px 40px;
+}
+
+.description img {
+    width: 30%;;
+}
+
+body main .what-i-know .grid-know {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+body main .what-i-know .grid-know .img-know {
+    width: 50%;
+}
+
+body main .my-projects {
+    height: 2890px;
+    display: flex;
+    flex-direction: column;
+}
+
+body main .my-projects .grid-projects {
+    height: 2400px;
+    display: flex;
+    flex-direction: column;
+}
+    
+body main .my-projects .grid-projects .card-project {
+    height: 450px;
+    border: #3300cc 1px solid;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+body main .my-projects .grid-projects .card-project div {
+    padding-left: 40px;
+    margin: 15px 0 15px;
+}
+
+body main .my-projects .grid-projects .card-project div .card-etiquetas {
+    display: flex;
+    padding: 0 40px 0 0;
+    margin-top: 0;
+    justify-content: space-between;
+}
+
+body main .my-projects .grid-projects .card-project .img-project {
+    width: 100%;
+}
+
+body main .personal-info {
+    height: 930px;
+    background-color: #3300cc;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+body main .personal-info article {
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+}
+
+body main .personal-info article .description {
+    height: 150px;
+}
+
+body main .personal-info article .sm-card {
+    height: 100px;
+    padding-left: 40px;
+}
+
+body main .personal-info article .sm-card .sm-1 {
+    height: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+}
+
+.sm-icon-1 {
+    width: 6%;
+}
+
+body main .personal-info article .description > h3 {
+    color: #dfd8ce;
+}
+
+body main .personal-info article .description > p {
+    color: #dfd8ce;
+}
+
+body main .personal-info article .sm-card .sm-1 > p {
+    color: #dfd8ce;
+}
+
+body main .personal-info form {
+    padding: 20px 20px 20px 40px;
+    height: 600px;
+    background-color: #dfd8ce;
+    display: flex;
+    flex-direction: column;
+}
+
+body main .personal-info form #form-card {
+    padding: 40px 20px 0 0;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+}
+
+body main .personal-info form #form-card .form-inputs {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    gap: 2px;
+}
+
+.input-style {
+    height: 25px;
+    border: #3300cc 2px solid;
+    border-radius: 20px;
+    padding: 5px 10px 5px 10px;
+    background-color: transparent;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    color: #3300cc;
+}
+
+label {
+    font-family: "Montserrat", sans-serif;
+    color: #3300cc;
+    font-size: 14px;
+}
+
+
+body main .personal-info form #form-card #submit {
+    padding-top: 10px;
+}
+
+.text-area {
+    border: #3300cc 2px solid;
+    border-radius: 10px;
+    padding: 5px 10px 5px 10px;
+    background-color: transparent;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    color: #3300cc;
+}
+
+body main footer {
     height: 200px;
+    background-color: #3300cc;
 }
 
