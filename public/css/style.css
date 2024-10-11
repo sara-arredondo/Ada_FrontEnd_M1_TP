@@ -12,11 +12,11 @@ h1, h2 {
     font-family: "Glyseric";
 }
 
-h3, h4, span, p, a{
+h3, h4, h5, span, p, a {
     font-family: "Montserrat", sans-serif;
 }
 
-h1, h2, h3, h4, span, p {
+h1, h3, h4, span, p {
     color: #3300cc;
 }
 
@@ -30,6 +30,7 @@ h2 {
     font-size: 30px;
     margin-bottom: 0;
     line-height: 1.2;
+    color: #dfd8ce;
 }
 
 h3 {
@@ -43,7 +44,12 @@ h4 {
     font-weight: 800;
     font-size: 20px;
     margin-bottom: 0;
-    margin-top: 10px;
+    margin-top: 0px;
+}
+
+h5 {
+    color: #dfd8ce;
+    font-weight: 300;
 }
 
 p {
@@ -71,7 +77,7 @@ body {
 
 body main {
     width: 320px;
-    height: 5890gipx;
+    height: 6350px;
     padding: 0;
     margin: 0;
     display: flex;
@@ -102,7 +108,7 @@ body main header nav img {
 }
 
 body main .hero {
-    height: 600px;
+    height: 650px;
     display: flex;
     flex-direction: column;
 }
@@ -117,7 +123,7 @@ body main .hero article {
     padding: 10px 20px 15px 40px;
 }
 
-.button-style {
+body main .button-style {
     width: 150px;
     height: 40px;
     border-radius: 20px;
@@ -126,11 +132,21 @@ body main .hero article {
     background-color: #3300cc;
     color: #dfd8ce;
     border: none;
+    cursor: pointer;
+}
+
+body main .button-style:hover {
+    background-color: #ee6a5b;    
 }
 
 body main .quote {
     height: 400px;
-    padding: 0px 40px 0px 40px;
+    padding: 20px 40px 0px 40px;
+    background-color: #3300cc;
+}
+
+body main .quote > p {
+    color: #dfd8ce;
 }
 
 body main #what-i-know {
@@ -144,9 +160,8 @@ body main .description {
 }
 
 body main .divider {
-    padding: 20px 0 0 40px;
+    margin: 40px 0 0 40px;
     width: 30%;
-
 }
 
 body main #what-i-know .grid-know {
@@ -186,8 +201,12 @@ body main #projects .grid-projects .card-project div {
 body main #projects .grid-projects .card-project div .card-etiquetas {
     display: flex;
     padding: 0 40px 0 0;
-    margin-top: 0;
+    margin: 0;
     justify-content: space-between;
+}
+
+body main #projects .grid-projects .card-project div .divider-project {
+    width: 85%;
 }
 
 body main #projects .grid-projects .card-project .img-project {
@@ -195,16 +214,17 @@ body main #projects .grid-projects .card-project .img-project {
 }
 
 body main #personal-info {
-    height: 900px;
-    background-color: #3300cc;
+    height: 1000px;
     padding-top: 30px;
     display: flex;
     flex-direction: column;
 }
 body main #personal-info article {
-    height: 260px;
+    height: 280px;
     display: flex;
     flex-direction: column;
+    background-color: #3300cc;
+    padding-top: 40px;
 }
 
 body main #personal-info article .description {
@@ -224,8 +244,16 @@ body main #personal-info article .sm-card .sm-group {
     gap: 15px;
 }
 
-.sm-icon {
+body main .sm-icon {
     width: 6%;
+}
+
+body main .sm-link {
+    text-decoration: none;
+}
+
+body main .sm-link:hover {
+    color: #ee6a5b;
 }
 
 body main #personal-info article .description > h3 {
@@ -253,49 +281,97 @@ body main #personal-info form #form-card {
     height: 500px;
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
 }
 
 body main #personal-info form #form-card .form-inputs {
     display: flex;
     flex-direction: column;
-    padding-bottom: 10px;
+    padding-bottom: 20px;
     gap: 2px;
 }
 
 body main #personal-info form #form-card .form-inputs .input-style {
     height: 25px;
-    border: #3300cc 2px solid;
-    border-radius: 20px;
-    padding: 5px 10px 5px 10px;
+    border: none;
+    border-bottom: 2px solid #3300cc;
+    padding: 5px 10px 0px 10px;
     background-color: transparent;
+    outline: none;
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
     color: #3300cc;
 }
 
-label {
+body main #personal-info form #form-card .form-inputs .input-style::placeholder {
+    color: #8e7fcc;
+}
+
+body main #personal-info form #form-card .form-inputs .input-style:hover {
+    border-bottom: 2px solid #ee6a5b ;
+}
+
+body main label {
     font-family: "Montserrat", sans-serif;
     color: #3300cc;
     font-size: 14px;
 }
 
-
 body main .personal-info form #form-card #submit {
     padding-top: 10px;
 }
-
-.text-area {
+ 
+body main #personal-info form #form-card .form-inputs .text-area {
     border: #3300cc 2px solid;
-    border-radius: 10px;
-    padding: 5px 10px 5px 10px;
+    margin-top: 15px;
+    padding: 10px 10px 5px 10px;
     background-color: transparent;
     font-family: "Montserrat", sans-serif;
     font-weight: 600;
     color: #3300cc;
+    outline: none;
+}
+
+body main #personal-info form #form-card .form-inputs .text-area:hover {
+    border: #ee6a5b 2px solid;
+}
+
+body main #personal-info form #form-card .form-inputs form-inputs .container-text-area {
+    margin-top: 50px;
 }
 
 body main footer {
-    height: 150px;
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    padding: 40px 40px 5px 40px;
     background-color: #3300cc;
 }
 
+
+body main footer #footer-img {
+    width: 40%;
+    margin-bottom: 20px;
+}
+
+body main footer div {
+    margin-top: 20px;
+    display: flex;
+    height: 50px;
+}
+
+body main footer div a {
+    width: 50px;
+}
+
+body main footer div a img {
+    width: 40%;
+}
+
+body main footer p {
+    margin-top: 50px;
+}
+
+body main footer > h3 {
+    color: #dfd8ce;
+}
