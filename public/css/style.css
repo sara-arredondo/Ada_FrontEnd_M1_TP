@@ -23,6 +23,7 @@ h1, h2, h3, h4, span, p {
 h1 {
     font-size: 50px;
     width: 70%;
+    margin: 0;
 }
 
 h2 {
@@ -70,7 +71,7 @@ body {
 
 body main {
     width: 320px;
-    height: 6000px;
+    height: 5890gipx;
     padding: 0;
     margin: 0;
     display: flex;
@@ -79,8 +80,9 @@ body main {
 
 body main header {
     padding: 0px 40px 0px 40px;
-    height: 150px;
+    height: 100px;
     display: flex;
+    align-items: center;
 }
 
 body main header nav {
@@ -94,7 +96,7 @@ body main header nav ul {
 }
 
 body main header nav img {
-    width: 40%;
+    width: 30%;
     justify-items: center;
     margin-left: auto;
 }
@@ -136,14 +138,15 @@ body main #what-i-know {
     display: flex;
     flex-direction: column;
 }
-
-.description {
+body main .description {
     height: 280px;
     padding: 10px 40px 10px 40px;
 }
 
-.description img {
-    width: 30%;;
+body main .divider {
+    padding: 20px 0 0 40px;
+    width: 30%;
+
 }
 
 body main #what-i-know .grid-know {
@@ -191,15 +194,15 @@ body main #projects .grid-projects .card-project .img-project {
     width: 100%;
 }
 
-body main .personal-info {
-    height: 930px;
+body main #personal-info {
+    height: 900px;
     background-color: #3300cc;
     padding-top: 30px;
     display: flex;
     flex-direction: column;
 }
-body main .personal-info article {
-    height: 300px;
+body main #personal-info article {
+    height: 260px;
     display: flex;
     flex-direction: column;
 }
@@ -213,7 +216,7 @@ body main #personal-info article .sm-card {
     padding-left: 40px;
 }
 
-body main #personal-info article .sm-card .sm-1 {
+body main #personal-info article .sm-card .sm-group {
     height: 30px;
     display: flex;
     flex-wrap: wrap;
@@ -221,7 +224,7 @@ body main #personal-info article .sm-card .sm-1 {
     gap: 15px;
 }
 
-.sm-icon-1 {
+.sm-icon {
     width: 6%;
 }
 
@@ -259,7 +262,7 @@ body main #personal-info form #form-card .form-inputs {
     gap: 2px;
 }
 
-.input-style {
+body main #personal-info form #form-card .form-inputs .input-style {
     height: 25px;
     border: #3300cc 2px solid;
     border-radius: 20px;
@@ -292,7 +295,7 @@ body main .personal-info form #form-card #submit {
 }
 
 body main footer {
-    height: 200px;
+    height: 150px;
     background-color: #3300cc;
 }
 
