@@ -89,6 +89,10 @@ body main header nav {
     display: flex;
 }
 
+body main header nav ul {
+    display: none;
+}
+
 body main header nav img {
     width: 40%;
     justify-items: center;
@@ -127,7 +131,7 @@ body main .quote {
     padding: 0px 40px 0px 40px;
 }
 
-body main .what-i-know {
+body main #what-i-know {
     height: 800px;
     display: flex;
     flex-direction: column;
@@ -142,28 +146,28 @@ body main .what-i-know {
     width: 30%;;
 }
 
-body main .what-i-know .grid-know {
+body main #what-i-know .grid-know {
     display: flex;
     flex-wrap: wrap;
 }
 
-body main .what-i-know .grid-know .img-know {
+body main #what-i-know .grid-know .img-know {
     width: 50%;
 }
 
-body main .my-projects {
+body main #projects {
     height: 2890px;
     display: flex;
     flex-direction: column;
 }
 
-body main .my-projects .grid-projects {
+body main #projects .grid-projects {
     height: 2400px;
     display: flex;
     flex-direction: column;
 }
     
-body main .my-projects .grid-projects .card-project {
+body main #projects .grid-projects .card-project {
     height: 450px;
     border: #3300cc 1px solid;
     margin-bottom: 20px;
@@ -171,19 +175,19 @@ body main .my-projects .grid-projects .card-project {
     flex-direction: column;
 }
 
-body main .my-projects .grid-projects .card-project div {
+body main #projects .grid-projects .card-project div {
     padding-left: 40px;
     margin: 15px 0 15px;
 }
 
-body main .my-projects .grid-projects .card-project div .card-etiquetas {
+body main #projects .grid-projects .card-project div .card-etiquetas {
     display: flex;
     padding: 0 40px 0 0;
     margin-top: 0;
     justify-content: space-between;
 }
 
-body main .my-projects .grid-projects .card-project .img-project {
+body main #projects .grid-projects .card-project .img-project {
     width: 100%;
 }
 
@@ -200,16 +204,16 @@ body main .personal-info article {
     flex-direction: column;
 }
 
-body main .personal-info article .description {
+body main #personal-info article .description {
     height: 150px;
 }
 
-body main .personal-info article .sm-card {
+body main #personal-info article .sm-card {
     height: 100px;
     padding-left: 40px;
 }
 
-body main .personal-info article .sm-card .sm-1 {
+body main #personal-info article .sm-card .sm-1 {
     height: 30px;
     display: flex;
     flex-wrap: wrap;
@@ -221,19 +225,19 @@ body main .personal-info article .sm-card .sm-1 {
     width: 6%;
 }
 
-body main .personal-info article .description > h3 {
+body main #personal-info article .description > h3 {
     color: #dfd8ce;
 }
 
-body main .personal-info article .description > p {
+body main #personal-info article .description > p {
     color: #dfd8ce;
 }
 
-body main .personal-info article .sm-card .sm-1 > p {
+body main #personal-info article .sm-card .sm-1 > p {
     color: #dfd8ce;
 }
 
-body main .personal-info form {
+body main #personal-info form {
     padding: 20px 20px 20px 40px;
     height: 600px;
     background-color: #dfd8ce;
@@ -241,14 +245,14 @@ body main .personal-info form {
     flex-direction: column;
 }
 
-body main .personal-info form #form-card {
+body main #personal-info form #form-card {
     padding: 40px 20px 0 0;
     height: 500px;
     display: flex;
     flex-direction: column;
 }
 
-body main .personal-info form #form-card .form-inputs {
+body main #personal-info form #form-card .form-inputs {
     display: flex;
     flex-direction: column;
     padding-bottom: 10px;
