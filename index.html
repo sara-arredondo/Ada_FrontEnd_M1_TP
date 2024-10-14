@@ -18,6 +18,7 @@
             <h1>Hello,</h1>
             <nav>
                 <img src="./public/svg/menu.svg" alt="menu-icon">
+                <img id="img-nav" src="./public/svg/Recurso-23.svg" alt="decorative">
                 <ul>
                     <li><a class="nav-style" href="#what-i-know">WHAT I KNOW</a></li>
                     <li><a class="nav-style" href="#projects">PROJECTS</a></li>
@@ -26,7 +27,7 @@
             </nav>
         </header>
         <section class="hero">
-            <div></div>
+            <div id="hero-img"></div>
             <article>
                 <h3>I'm Sara Arredondo</h3>
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.
@@ -53,18 +54,20 @@
                 </p>
             </div>
             <div class="grid-know">
-                <img class="img-know" src="./public/svg/know-1-html.svg" alt="html">
-                <img class="img-know" src="./public/svg/know-2-decorative.svg" alt="html">
-                <img class="img-know" src="../public/svg/know-2-decorative.svg" alt="html">
-                <img class="img-know" src="./public/svg/know3-java.svg" alt="html">
-                <img class="img-know" src="./public/svg/know4-visual.svg" alt="html">
-                <img class="img-know" src="./public/svg/know-2-decorative.svg" alt="html">
+                <img class="img-know one" src="./public/svg/know-1-html.svg" alt="html">
+                <img class="img-know two" src="./public/svg/know-2-decorative.svg" alt="html">
+                <img class="img-know three" src="../public/svg/know-2-decorative.svg" alt="html">
+                <img class="img-know four " src="./public/svg/know3-java.svg" alt="html">
+                <img class="img-know five" src="./public/svg/know4-visual.svg" alt="html">
+                <img class="img-know six" src="./public/svg/know-2-decorative.svg" alt="html">
+                <img class="img-know seven" src="./public/svg/know-2-decorative.svg" alt="html">
+                <img class="img-know eigth" src="./public/svg/know-5-illus.svg" alt="html">
             </div>
         </section>
         <img class="divider" src="./public/svg/line-1.svg" alt="decorative">
         <section id="projects">
             <div class="description">
-                <h3>My projects</h3>
+                <h3>Projects</h3>
                 <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel.
                 </p>
             </div>
@@ -77,6 +80,7 @@
                             <span>2022</span>
                         </div>
                         <img class="divider-project" src="./public/svg/line-2.svg" alt="decorative">
+                            <a href="https://www.instagram.com/inesbarracuda/"></a>
                         <h4>From Away Films</h4>
                     </div>
                 </article>
@@ -139,32 +143,38 @@
         </section>
         <section id="personal-info">
             <article>
-                <div class="description">
-                    <h3>Contact me</h3>
-                    <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut.
-                    </p>
+                <div id="contact-me">
+                    <div class="description">
+                        <h3>Contact me</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut.
+                        </p>
+                    </div>
+                    <div class="sm-card">
+                        <div class="sm-group">
+                            <img class="sm-icon" src="./public/svg/noun-instagram-6204297.svg" alt="logo instagram">
+                            <a class="sm-link" href="https://www.instagram.com/inesbarracuda/">@inesbarracuda</a>
+                        </div>
+                        <div class="sm-group">
+                            <img class="sm-icon" src="./public/svg/noun-discord-6518134.svg" alt="logo discord">
+                            <a class="sm-link" href="https://www.instagram.com/inesbarracuda/">@inesbarracuda</a>
+                        </div>
+                    </div>
                 </div>
-                <div class="sm-card">
-                    <div class="sm-group">
-                        <img class="sm-icon" src="./public/svg/noun-instagram-6204297.svg" alt="logo instagram">
-                        <a class="sm-link" href="https://www.instagram.com/inesbarracuda/">@inesbarracuda</a>
-                    </div>
-                    <div class="sm-group">
-                        <img class="sm-icon" src="./public/svg/noun-discord-6518134.svg" alt="logo discord">
-                        <a class="sm-link" href="https://www.instagram.com/inesbarracuda/">@inesbarracuda</a>
-                    </div>
-                </div> 
+                <div id="contact-me-img">
+                </div>
             </article>
             <form>
                 <h3>Let's work together!</h3>
                 <div id="form-card">
-                    <div class="form-inputs">
-                        <label for="">Nombre*</label>
-                        <input class="input-style" type="text" placeholder="Antonia" name="name" required>
-                    </div>
-                    <div class="form-inputs">
-                        <label for="">Apellido*</label>
-                        <input class="input-style" placeholder="López" name="surename" type="text" required>
+                    <div>
+                        <div class="form-inputs">
+                            <label for="">Nombre*</label>
+                            <input class="input-style" type="text" placeholder="Antonia" name="name" required>
+                        </div>
+                        <div class="form-inputs">
+                            <label for="">Apellido*</label>
+                            <input class="input-style" placeholder="López" name="surename" type="text" required>
+                        </div>
                     </div>
                     <div class="form-inputs">
                         <label for="">Your email*</label>
@@ -172,7 +182,7 @@
                     </div>
                     <div class="form-inputs container-text-area">
                         <label for="">Your message*</label> 
-                        <textarea class="text-area" name="comment" id="" rows="8"></textarea>
+                        <textarea name="comment" id="" rows="8"></textarea>
                     </div>
                     <div id="submit">
                         <input class="button-style" type="submit" value="SEND">
@@ -181,7 +191,7 @@
             </form>       
         </section>
         <footer>
-            <img id="footer-img" src="./public/svg/eye.svg" alt="decorative">
+            <div id="footer-img"></div>
             <h3>Lorem ipsum dolor sit amet</h3>
             <div>
                 <a href="https://www.instagram.com/inesbarracuda/">
