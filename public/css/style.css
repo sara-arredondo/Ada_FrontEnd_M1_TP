@@ -637,7 +637,7 @@ body main footer > h3 {
     
     body main header {
         padding: 0px 40px 0px 40px;
-        height: 120px;
+        height: 200px;
         display: flex;
         flex-wrap: wrap;
         align-content: center;
@@ -683,7 +683,7 @@ body main footer > h3 {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
-        height: 500px;
+        height: 700px;
     }
 
     body main .hero #hero-img {
@@ -847,5 +847,224 @@ body main footer > h3 {
         text-align: center;
     }
 }
+
+@media (min-width: 1921px) {
+    body main {
+        width: 100vw;
+    }
+    
+    body main header {
+        padding: 0px 40px 0px 40px;
+        height: 200px;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: baseline;
+    }
+
+    body main header h1 {
+        width: 30%;
+        font-size: 60px;
+    }
+    
+    body main header nav {
+        width: 60%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: baseline;
+    }
+
+    body main header nav #img-nav {
+        display: flex;
+        width: 10%;
+    }
+    
+    body main header nav ul {
+        display: flex;
+        color: #3300cc;
+        list-style: none;
+        gap: 15px;
+    }
+
+    body main header nav ul li .nav-style {
+        color: #3300cc;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 800;
+        text-decoration: none;
+    }
+
+    body main header nav img {
+        display: none;
+    }
+    
+    body main .hero {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        height: 700px;
+    }
+
+    body main .hero #hero-img {
+        width: 50%;
+        height: 100%;
+        background-image: url("../img/Sara_Arredondo.png");
+        background-size: cover;
+    }
+    
+    body main .hero article {
+        width: 46%;
+        align-items: flex-end;
+        padding: 0 0 40px 0px;
+    }
+
+    body main .hero article > img {
+        display: flex;
+        width: 50%;
+    }
+
+    body main .hero article > p {
+        text-align: right;
+        width: 80%;
+    }
+    
+    body main .quote {
+        height: 250px;
+        padding: 30px 50px 30px 50px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;        
+    }
+    
+    body main .divider {
+        width: 10%;
+    }
+
+    body main #what-i-know {
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    body main .description {
+        height: 150px;
+        padding: 10px 120px 10px 40px;
+    }
+    
+    body main #what-i-know .grid-know {
+        padding: 0 40px 0 40px;
+        display: flex;
+        flex-wrap: wrap;
+        width: 90%;
+        justify-content: space-between;
+    }
+
+    body main #what-i-know .grid-know .img-know {
+        width: 23%;
+    }
+
+    body main #what-i-know .grid-know .three {
+        order: 4;
+    }
+
+    body main #what-i-know .grid-know .four {
+        order: 6;
+    }
+
+    body main #projects {
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    body main #projects .grid-projects {
+        height: fit-content;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-content: flex-start;
+        justify-content: space-around;
+    }
+        
+    body main #projects .grid-projects .card-project {
+        width: 300px;
+        height: 400px;
+    }
+
+    body main #personal-info {
+        height: fit-content;
+    }
+    
+    body main #personal-info article {
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    body main #personal-info article #contact-me {
+        background-color: #3300cc;
+        height: 400px;
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    body main #personal-info article #contact-me-img {
+        display: flex;
+        background-image: url("../img/Recurso\ 19.png");
+        width: 55%;
+        background-size: cover;
+    }
+
+    body main .sm-icon {
+        width: 4%;
+    }
+
+    body main #personal-info form {
+        margin-top: 20px;
+        height: 500px;
+    }
+
+    body main #personal-info form #form-card div .form-inputs {
+        width: 47%;
+    }
+
+    body main #personal-info form #form-card #submit {
+        justify-content: flex-end;
+    }
+
+    body main #personal-info form #form-card div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    body main footer #footer-img {
+        background-image: url("../svg/double-eye.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    body main footer {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        align-items: center;
+    }
+
+    body main footer div {
+        align-items: flex-end;
+    }
+
+    body main footer div a {
+        align-content: center;
+        text-align: center;
+    }
+}
+
 
 
