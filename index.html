@@ -8,30 +8,31 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
-          rel="stylesheet">
+        rel="stylesheet">
     <link rel="stylesheet" href="./public/css/style.css">
+    <link rel="shortcut icon" href="./public/img/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
+    <header>
+        <h1>Hello,</h1>
+        <nav>
+            <img src="./public/svg/menu.svg" alt="menu-icon">
+            <img id="img-nav" src="./public/svg/Recurso-23.svg" alt="decorative">
+            <ul>
+                <li><a class="nav-style" href="#what-i-know">WHAT I KNOW</a></li>
+                <li><a class="nav-style" href="#projects">PROJECTS</a></li>
+                <li><a class="nav-style" href="#personal-info">CONTACT ME</a></li>
+            </ul>
+        </nav>
+    </header>
     <main>
-        <header>
-            <h1>Hello,</h1>
-            <nav>
-                <img src="./public/svg/menu.svg" alt="menu-icon">
-                <img id="img-nav" src="./public/svg/Recurso-23.svg" alt="decorative">
-                <ul>
-                    <li><a class="nav-style" href="#what-i-know">WHAT I KNOW</a></li>
-                    <li><a class="nav-style" href="#projects">PROJECTS</a></li>
-                    <li><a class="nav-style" href="#personal-info">CONTACT ME</a></li>
-                </ul>
-            </nav>
-        </header>
         <section class="hero">
             <div id="hero-img"></div>
             <article>
-                <img src="./public/svg/Recurso1.svg" alt="">
                 <h3>I'm Sara Arredondo</h3>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                    laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.
                 </p>
                 <a href="#projects">
                     <button class="button-style">MY WORK</button>
@@ -44,14 +45,17 @@
                 in design is not sign of a bad design. It's better because it focuses on the
                 <em>essentials."</em>
             </h2>
-            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim.
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                laoreet dolore magna aliquam erat volutpat. Ut wisi enim.
             </p>
         </section>
         <img class="divider" src="./public/svg/line-1.svg" alt="decorative">
         <section id="what-i-know">
             <div class="description">
                 <h3>What I know</h3>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel.
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                    laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                    ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel.
                 </p>
             </div>
             <div class="grid-know">
@@ -69,7 +73,9 @@
         <section id="projects">
             <div class="description">
                 <h3>Projects</h3>
-                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel.
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                    laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                    ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel.
                 </p>
             </div>
             <div class="grid-projects">
@@ -81,7 +87,7 @@
                             <span>2022</span>
                         </div>
                         <img class="divider-project" src="./public/svg/line-2.svg" alt="decorative">
-                            <a href="https://www.instagram.com/inesbarracuda/"></a>
+                        <a href="https://www.instagram.com/inesbarracuda/"></a>
                         <h4>From Away Films</h4>
                     </div>
                 </article>
@@ -147,7 +153,8 @@
                 <div id="contact-me">
                     <div class="description">
                         <h3>Contact me</h3>
-                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut.
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                            tincidunt ut.
                         </p>
                     </div>
                     <div class="sm-card">
@@ -179,35 +186,35 @@
                     </div>
                     <div class="form-inputs">
                         <label for="email">Your email*</label>
-                        <input class="input-style" placeholder="hola@gmail.com" name="email" type="email"required >
+                        <input class="input-style" placeholder="hola@gmail.com" name="email" type="email" required>
                     </div>
                     <div class="form-inputs container-text-area">
-                        <label for="message">Your message*</label> 
+                        <label for="message">Your message*</label>
                         <textarea name="comment" id="" rows="8"></textarea>
                     </div>
                     <div id="submit">
                         <input class="button-style" type="submit" value="SEND">
                     </div>
-                </div>                
-            </form>       
+                </div>
+            </form>
         </section>
-        <footer>
-            <div id="footer-img"></div>
-            <h3>Lorem ipsum dolor sit amet</h3>
-            <div>
-                <a href="https://www.instagram.com/inesbarracuda/">
-                    <img src="./public/svg/noun-instagram-6204297.svg" alt="instagram">
-                </a>
-                <a href="https://www.instagram.com/inesbarracuda/">
-                    <img src="./public/svg/noun-discord-6518134.svg"  alt="discord">
-                </a>
-                <a href="https://www.instagram.com/inesbarracuda/">
-                    <img src="./public/svg/noun-instagram-6204297.svg" alt="instagram">
-                </a> 
-            </div>
-            <h5>By Sara Arredondo</h5>
-        </footer>   
     </main>
+    <footer>
+        <div id="footer-img"></div>
+        <h3>Lorem ipsum dolor sit amet</h3>
+        <div>
+            <a href="https://www.instagram.com/inesbarracuda/">
+                <img src="./public/svg/noun-instagram-6204297.svg" alt="instagram">
+            </a>
+            <a href="https://www.instagram.com/inesbarracuda/">
+                <img src="./public/svg/noun-discord-6518134.svg" alt="discord">
+            </a>
+            <a href="https://www.instagram.com/inesbarracuda/">
+                <img src="./public/svg/noun-instagram-6204297.svg" alt="instagram">
+            </a>
+        </div>
+        <h5>By Sara Arredondo</h5>
+    </footer>
 </body>
 
 </html>

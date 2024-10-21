@@ -69,22 +69,15 @@ span {
 }
 
 body {
+    width: 375px;
     background-color: #dfd8ce; 
     display: flex;
-    justify-content: center;
-    margin: 0;
-}
-
-body main {
-    width: 375px;
-    height: fit-content;
-    padding: 0;
-    margin: 0;
-    display: flex;
+    align-items: center;    
     flex-direction: column;
+    margin: 0;
 }
 
-body main header {
+body header {
     padding: 0px 40px 0px 40px;
     height: 100px;
     display: flex;
@@ -92,21 +85,32 @@ body main header {
     align-items: center;
 }
 
-body main header nav {
+body header nav {
     width: 30%;
     margin-left: auto;
     display: flex;
 }
 
-body main header nav  #img-nav, ul {
+body header nav  #img-nav, ul {
     display: none;
 }
 
-body main header nav img {
+body header nav img {
     width: 30%;
     justify-items: center;
     margin-left: auto;
 }
+
+body main {
+    justify-content: center;
+    height: fit-content;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+
 
 body main .hero {
     height: 600px;
@@ -116,7 +120,7 @@ body main .hero {
 
 body main .hero #hero-img {
     height: 320px;
-    background-image: url("../img/Sara_Arredondo.png");
+    background-image: url("../img/Florecer_Niña.png");
     background-size: cover;
     background-position: center;
 }
@@ -171,7 +175,7 @@ body main #what-i-know {
 }
 
 body main .description {
-    height: 280px;
+    height: 250px;
     padding: 10px 40px 10px 40px;
 }
 
@@ -372,7 +376,7 @@ body main #personal-info form #form-card .form-inputs form-inputs .container-tex
     margin-top: 50px;
 }
 
-body main footer {
+body footer {
     display: flex;
     flex-direction: column;
     height: 300px;
@@ -380,43 +384,42 @@ body main footer {
     background-color: #3300cc;
 }
 
-body main footer #footer-img {
+body footer #footer-img {
     background-image: url("../svg/eye.svg");
     background-repeat: no-repeat;
     width: 40%;
     margin-bottom: 20px;
 }
 
-body main footer div {
+body footer div {
     margin-top: 20px;
     display: flex;
     height: 50px;
 }
 
-body main footer div a {
+body footer div a {
     width: 50px;
 }
 
-body main footer div a img {
+body footer div a img {
     width: 40%;
 }
 
-body main footer p {
+body footer p {
     margin-top: 50px;
 }
 
-body main footer > h3 {
+body footer > h3 {
     color: #dfd8ce;
 }
 
-@media (min-width: 768px) and (max-width:1024px) {
+@media (min-width: 768px) {
 
     body main {
-        min-width: 768px;
-        max-width: 1024px;
+        width: 768px;
     }
     
-    body main header {
+    body header {
         padding: 0px 40px 0px 40px;
         height: 120px;
         display: flex;
@@ -425,38 +428,38 @@ body main footer > h3 {
         align-items: baseline;
     }
 
-    body main header h1 {
+    body header h1 {
         width: 30%;
         font-size: 60px;
     }
     
-    body main header nav {
+    body header nav {
         width: 60%;
         display: flex;
         justify-content: flex-end;
         align-items: baseline;
     }
 
-    body main header nav #img-nav {
+    body header nav #img-nav {
         display: flex;
         width: 10%;
     }
     
-    body main header nav ul {
+    body header nav ul {
         display: flex;
         color: #3300cc;
         list-style: none;
         gap: 15px;
     }
 
-    body main header nav ul li .nav-style {
+    body header nav ul li .nav-style {
         color: #3300cc;
         font-family: "Montserrat", sans-serif;
         font-weight: 800;
         text-decoration: none;
     }
 
-    body main header nav img {
+    body header nav img {
         display: none;
     }
     
@@ -470,7 +473,6 @@ body main footer > h3 {
     body main .hero #hero-img {
         width: 50%;
         height: 100%;
-        background-image: url("../img/Sara_Arredondo.png");
         background-size: cover;
     }
     
@@ -497,6 +499,10 @@ body main footer > h3 {
         display: flex;
         flex-direction: column;
         justify-content: center;        
+    }
+
+    body main .quote > p {
+        display: none;
     }
     
     body main .divider {
@@ -606,36 +612,56 @@ body main footer > h3 {
         justify-content: space-between;
     }
 
-    body main footer #footer-img {
+    body footer #footer-img {
         background-image: url("../svg/double-eye.svg");
         background-repeat: no-repeat;
         background-position: center;
     }
 
-    body main footer {
+    body footer {
         display: flex;
         flex-direction: column;
         height: fit-content;
         align-items: center;
     }
 
-    body main footer div {
+    body footer div {
         align-items: flex-end;
     }
 
-    body main footer div a {
+    body footer div a {
         align-content: center;
         text-align: center;
     }
 }
 
-@media (min-width: 1025px) and  (max-width: 1920px) {
+@media (min-width: 1024px)  {
 
+    h1 {
+        font-size: 80px;
+    }
+    
+    h2 {
+        font-size: 40px;
+    }
+    
+    h3 {
+        font-size: 35px;
+    }
+    
+    p {
+        font-size: 16px;
+    }
+    
+    a {
+        font-size: 14px;
+    }
+    
     body main {
         width: 100vw;
     }
     
-    body main header {
+    body header {
         padding: 0px 40px 0px 40px;
         height: 200px;
         display: flex;
@@ -644,38 +670,261 @@ body main footer > h3 {
         align-items: baseline;
     }
 
-    body main header h1 {
+    body header h1 {
         width: 30%;
-        font-size: 60px;
     }
     
-    body main header nav {
-        width: 60%;
+    body header nav {
+        width: 50%;
         display: flex;
         justify-content: flex-end;
         align-items: baseline;
     }
 
-    body main header nav #img-nav {
+    body header nav #img-nav {
         display: flex;
         width: 10%;
     }
     
-    body main header nav ul {
+    body header nav ul {
         display: flex;
         color: #3300cc;
         list-style: none;
         gap: 15px;
     }
 
-    body main header nav ul li .nav-style {
+    body header nav ul li .nav-style {
         color: #3300cc;
         font-family: "Montserrat", sans-serif;
         font-weight: 800;
         text-decoration: none;
     }
 
-    body main header nav img {
+    body  header nav img {
+        display: none;
+    }
+    
+    body main .hero {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        height: 700px;
+    }
+
+    body main .hero #hero-img {
+        width: 50%;
+        height: 100%;
+        background-size: cover;
+    }
+    
+    body main .hero article {
+        width: 46%;
+        align-items: flex-end;
+        padding: 0 0 40px 0px;
+    }
+
+    body main .hero article > img {
+        display: flex;
+        width: 50%;
+    }
+
+    body main .hero article > p {
+        text-align: right;
+        width: 80%;
+    }
+    
+    body main .quote {
+        height: 250px;
+        padding: 30px 100px 30px 100px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;        
+    }
+
+    body main .quote >  p {
+        display: none;
+    }
+    
+    body main .divider {
+        width: 10%;
+    }
+
+    body main #what-i-know {
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    body main .description {
+        height: 150px;
+        padding: 10px 120px 10px 40px;
+    }
+    
+    body main #what-i-know .grid-know {
+        padding: 0 40px 0 40px;
+        display: flex;
+        flex-wrap: wrap;
+        width: 90%;
+        justify-content: space-between;
+    }
+
+    body main #what-i-know .grid-know .img-know {
+        width: 23%;
+    }
+
+    body main #what-i-know .grid-know .three {
+        order: 4;
+    }
+
+    body main #what-i-know .grid-know .four {
+        order: 6;
+    }
+
+    body main #projects {
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    body main #projects .grid-projects {
+        margin: 40px;
+        height: fit-content;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-content: flex-start;
+        justify-content: center;
+        gap: 40px;
+    }
+        
+    body main #projects .grid-projects .card-project {
+        width: 300px;
+        height: 400px;
+    }
+
+    body main #personal-info {
+        height: fit-content;
+    }
+    
+    body main #personal-info article {
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    body main #personal-info article #contact-me {
+        background-color: #3300cc;
+        height: 400px;
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    body main #personal-info article #contact-me-img {
+        display: flex;
+        background-image: url("../img/Recurso\ 19.png");
+        width: 55%;
+        background-size: cover;
+    }
+
+    body main .sm-icon {
+        width: 4%;
+    }
+
+    body main #personal-info form {
+        margin-top: 20px;
+        height: 500px;
+    }
+
+    body main #personal-info form #form-card div .form-inputs {
+        width: 47%;
+    }
+
+    body main #personal-info form #form-card #submit {
+        justify-content: flex-end;
+    }
+
+    body main #personal-info form #form-card div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    body footer #footer-img {
+        background-image: url("../svg/double-eye.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    body footer {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        align-items: center;
+    }
+
+    body footer div {
+        align-items: flex-end;
+    }
+
+    body footer div a {
+        align-content: center;
+        text-align: center;
+    }
+}
+
+@media (min-width: 1440px) {
+
+    body main {
+        width: 100vw;
+    }
+    
+    body header {
+        padding: 0px 40px 0px 40px;
+        height: 200px;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: baseline;
+    }
+
+    body header h1 {
+        width: 30%;
+        font-size: 60px;
+    }
+    
+    body header nav {
+        width: 60%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: baseline;
+    }
+
+    body header nav #img-nav {
+        display: flex;
+        width: 10%;
+    }
+    
+    body header nav ul {
+        display: flex;
+        color: #3300cc;
+        list-style: none;
+        gap: 15px;
+    }
+
+    body header nav ul li .nav-style {
+        color: #3300cc;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 800;
+        text-decoration: none;
+    }
+
+    body header nav img {
         display: none;
     }
     
@@ -825,242 +1074,24 @@ body main footer > h3 {
         justify-content: space-between;
     }
 
-    body main footer #footer-img {
+    body footer #footer-img {
         background-image: url("../svg/double-eye.svg");
         background-repeat: no-repeat;
         background-position: center;
     }
 
-    body main footer {
+    body footer {
         display: flex;
         flex-direction: column;
         height: fit-content;
         align-items: center;
     }
 
-    body main footer div {
+    body footer div {
         align-items: flex-end;
     }
 
-    body main footer div a {
-        align-content: center;
-        text-align: center;
-    }
-}
-
-@media (min-width: 1921px) {
-    body main {
-        width: 100vw;
-    }
-    
-    body main header {
-        padding: 0px 40px 0px 40px;
-        height: 200px;
-        display: flex;
-        flex-wrap: wrap;
-        align-content: center;
-        align-items: baseline;
-    }
-
-    body main header h1 {
-        width: 30%;
-        font-size: 60px;
-    }
-    
-    body main header nav {
-        width: 60%;
-        display: flex;
-        justify-content: flex-end;
-        align-items: baseline;
-    }
-
-    body main header nav #img-nav {
-        display: flex;
-        width: 10%;
-    }
-    
-    body main header nav ul {
-        display: flex;
-        color: #3300cc;
-        list-style: none;
-        gap: 15px;
-    }
-
-    body main header nav ul li .nav-style {
-        color: #3300cc;
-        font-family: "Montserrat", sans-serif;
-        font-weight: 800;
-        text-decoration: none;
-    }
-
-    body main header nav img {
-        display: none;
-    }
-    
-    body main .hero {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        height: 700px;
-    }
-
-    body main .hero #hero-img {
-        width: 50%;
-        height: 100%;
-        background-image: url("../img/Sara_Arredondo.png");
-        background-size: cover;
-    }
-    
-    body main .hero article {
-        width: 46%;
-        align-items: flex-end;
-        padding: 0 0 40px 0px;
-    }
-
-    body main .hero article > img {
-        display: flex;
-        width: 50%;
-    }
-
-    body main .hero article > p {
-        text-align: right;
-        width: 80%;
-    }
-    
-    body main .quote {
-        height: 250px;
-        padding: 30px 50px 30px 50px;
-        text-align: center;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;        
-    }
-    
-    body main .divider {
-        width: 10%;
-    }
-
-    body main #what-i-know {
-        height: fit-content;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    body main .description {
-        height: 150px;
-        padding: 10px 120px 10px 40px;
-    }
-    
-    body main #what-i-know .grid-know {
-        padding: 0 40px 0 40px;
-        display: flex;
-        flex-wrap: wrap;
-        width: 90%;
-        justify-content: space-between;
-    }
-
-    body main #what-i-know .grid-know .img-know {
-        width: 23%;
-    }
-
-    body main #what-i-know .grid-know .three {
-        order: 4;
-    }
-
-    body main #what-i-know .grid-know .four {
-        order: 6;
-    }
-
-    body main #projects {
-        height: fit-content;
-        display: flex;
-        flex-direction: column;
-    }
-    
-    body main #projects .grid-projects {
-        height: fit-content;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        align-content: flex-start;
-        justify-content: space-around;
-    }
-        
-    body main #projects .grid-projects .card-project {
-        width: 300px;
-        height: 400px;
-    }
-
-    body main #personal-info {
-        height: fit-content;
-    }
-    
-    body main #personal-info article {
-        width: 100%;
-        height: 400px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-    }
-
-    body main #personal-info article #contact-me {
-        background-color: #3300cc;
-        height: 400px;
-        width: 45%;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-evenly;
-    }
-
-    body main #personal-info article #contact-me-img {
-        display: flex;
-        background-image: url("../img/Recurso\ 19.png");
-        width: 55%;
-        background-size: cover;
-    }
-
-    body main .sm-icon {
-        width: 4%;
-    }
-
-    body main #personal-info form {
-        margin-top: 20px;
-        height: 500px;
-    }
-
-    body main #personal-info form #form-card div .form-inputs {
-        width: 47%;
-    }
-
-    body main #personal-info form #form-card #submit {
-        justify-content: flex-end;
-    }
-
-    body main #personal-info form #form-card div {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: space-between;
-    }
-
-    body main footer #footer-img {
-        background-image: url("../svg/double-eye.svg");
-        background-repeat: no-repeat;
-        background-position: center;
-    }
-
-    body main footer {
-        display: flex;
-        flex-direction: column;
-        height: fit-content;
-        align-items: center;
-    }
-
-    body main footer div {
-        align-items: flex-end;
-    }
-
-    body main footer div a {
+    body footer div a {
         align-content: center;
         text-align: center;
     }
