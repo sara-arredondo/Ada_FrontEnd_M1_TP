@@ -2,6 +2,7 @@ html {
     scroll-behavior: smooth;
 }
 
+/* --------------------------------------------Inicio  tipos externas--------------------------------------------------------- */
 @font-face {
     font-family: "Glyseric";
     src: url('../fonts/Glyseric.woff') format('woff'), /* Modern Browsers */
@@ -11,7 +12,9 @@ html {
     font-weight: normal;
     text-rendering: optimizeLegibility
 }
+/* -----------------------------------------------Fin tipos externas ----------------------------------------------------------*/
 
+/* -----------------------------------------------Estilos generales----------------------------------------------------------- */
 h1, h2 {
     font-family: "Glyseric";
 }
@@ -71,7 +74,9 @@ span {
     margin-bottom: 0;
     margin-top: 0;
 }
+/* -----------------------------------------------Fin estilos generales-------------------------------------------------------- */
 
+/* ----------------------------------------------------Mobile first------------------------------------------------------------ */
 body {
     width: 375px;
     background-color: #dfd8ce; 
@@ -415,11 +420,13 @@ body footer p {
 body footer > h3 {
     color: #dfd8ce;
 }
+/* ----------------------------------------------------Fin mobile first-------------------------------------------------------- */
 
+/* ----------------------------------------------------Inicio media queries---------------------------------------------------- */
 @media (min-width: 768px) {
 
     body {
-        width: 768px;
+        width: 100vw;
     }
     
     body header {
@@ -668,7 +675,7 @@ body footer > h3 {
     }
     
     body {
-        width: 1025px;
+        width: 100vw;
     }
 
     body header h1 {
@@ -741,7 +748,7 @@ body footer > h3 {
     }
 
     body {
-        width: 1921px;
+        width: 100vw;
     }
 
     body header {
@@ -898,3 +905,4 @@ body footer > h3 {
         font-size: 20px;
     }
 }
+/* ------------------------------------------------------Fin media queries----------------------------------------------------- */
