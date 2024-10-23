@@ -99,7 +99,11 @@ body header nav {
     display: flex;
 }
 
-body header nav  #img-nav, ul {
+body header #img-nav-divider, nav {
+    display: none;
+}
+
+body header nav ul {
     display: none;
 }
 
@@ -450,9 +454,9 @@ body footer > h3 {
         align-items: baseline;
     }
 
-    body header nav #img-nav {
-        display: flex;
+    body header #img-nav-divider {
         width: 10%;
+        display: flex;
     }
     
     body header nav ul {
@@ -757,7 +761,7 @@ body footer > h3 {
     }
 
     body header h1 {
-        width: 40%;
+        width: 30%;
         font-size: 90px;
     }
     
@@ -767,7 +771,7 @@ body footer > h3 {
 
     body header nav #img-nav {
         display: flex;
-        width: 10%;
+        width: 5%;
     }
     
     body header nav ul {
