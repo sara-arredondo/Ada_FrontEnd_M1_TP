@@ -1,36 +1,912 @@
+html {
+    scroll-behavior: smooth;
+}
+
+/* --------------------------------------------Inicio  tipos externas--------------------------------------------------------- */
 @font-face {
     font-family: "Glyseric";
-    src: url('Glyseric.woff') format('woff'), /* Modern Browsers */
-         url('Glyseric.woff2') format('woff2'), /* Modern Browsers */
+    src: url('../fonts/Glyseric.woff') format('woff'), /* Modern Browsers */
+         url('../fonts/Glyseric.woff2') format('woff2'), /* Modern Browsers */
          url('Glyseric.otf') format('opentype'); /* Safari, Android, iOS */
              font-style: normal;
     font-weight: normal;
     text-rendering: optimizeLegibility
 }
+/* -----------------------------------------------Fin tipos externas ----------------------------------------------------------*/
+
+/* -----------------------------------------------Estilos generales----------------------------------------------------------- */
+h1, h2 {
+    font-family: "Glyseric";
+}
+
+h3, h4, h5, span, p, a {
+    font-family: "Montserrat", sans-serif;
+}
+
+h1, h3, h4, span, p, a {
+    color: #3300cc;
+}
 
 h1 {
-    font-family: "Glyseric";
     font-size: 50px;
-    color: #3300cc;
-    width: 50%;
-}
-
-body {
-    background-color: #dfd8ce; 
-    display: flex;
-    justify-content: center;
-}
-
-body main {
-    width: 320px;
-    height: 4000px;
-    border: black 1px solid;
-    padding: 0;
     margin: 0;
 }
 
-body main header {
-    padding: 0px 40px 0px 40px;
-    height: 200px;
+h2 {
+    font-size: 30px;
+    margin-bottom: 0;
+    line-height: 1.2;
+    color: #dfd8ce;
 }
 
+h3 {
+    font-weight: 800;
+    font-size: 30px;
+    margin-bottom: 0;
+    margin-top: 10px;
+}
+
+h4 {
+    font-weight: 800;
+    font-size: 20px;
+    margin-bottom: 0;
+    margin-top: 0px;
+}
+
+h5 {
+    color: #dfd8ce;
+    font-weight: 300;
+}
+
+p {
+    font-weight: 300;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+a {
+    color: #dfd8ce;
+    font-size: 14px;
+}
+
+span {
+    font-weight: 500;
+    margin-bottom: 0;
+    margin-top: 0;
+}
+/* -----------------------------------------------Fin estilos generales-------------------------------------------------------- */
+
+/* ----------------------------------------------------Mobile first------------------------------------------------------------ */
+body {
+    width: 375px;
+    background-color: #dfd8ce; 
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+body header {
+    padding: 0px 40px 0px 40px;
+    height: 100px;
+    display: flex;
+    background-color: #dfd8ce;
+    align-items: center;
+}
+
+body header nav {
+    width: 30%;
+    margin-left: auto;
+    display: flex;
+}
+
+body header #img-nav-divider, nav {
+    display: none;
+}
+
+body header nav ul {
+    display: none;
+}
+
+body header nav img {
+    width: 30%;
+    justify-items: center;
+    margin-left: auto;
+}
+
+body main {
+    justify-content: center;
+    height: fit-content;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+}
+
+body main .hero {
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+}
+
+body main .hero #hero-img {
+    height: 320px;
+    background-image: url("../img/Florecer_Niña.png");
+    background-size: cover;
+    background-position: center;
+}
+
+body main .hero article {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-end;
+    padding: 10px 20px 15px 40px;
+}
+
+body main .hero article > img {
+    display: none;
+}
+
+body main .button-style {
+    width: 150px;
+    height: 40px;
+    border-radius: 20px;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    background-color: #3300cc;
+    color: #dfd8ce;
+    border: none;
+    cursor: pointer;
+    transition: all .14s ease-out;
+}
+
+body main .button-style:hover {
+    background-color: #ee6a5b;  
+    transform: scale(1.05); 
+}
+
+body main .quote {
+    height: 400px;
+    padding: 20px 40px 0px 40px;
+    background-color: #3300cc;
+}
+
+body main .quote > p {
+    color: #dfd8ce;
+}
+
+body main .divider {
+    margin: 40px 0 0 40px;
+    width: 30%;
+}
+
+body main #what-i-know {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+body main .description {
+    height: 250px;
+    padding: 10px 40px 10px 40px;
+}
+
+body main #what-i-know .grid-know {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+body main #what-i-know .grid-know .img-know {
+    width: 50%;
+}
+
+body main #projects {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+
+body main #projects .grid-projects {
+    height: fit-content;
+    display: flex;
+    flex-direction: column;
+}
+    
+body main #projects .grid-projects .card-project {
+    height: 480px;
+    border: #3300cc 1px solid;
+    margin-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+}
+
+body main #projects .grid-projects .card-project div {
+    display: flex;
+    height: 80px;
+    flex-direction: column;
+    padding: 0 40px 0 40px;
+    margin: 15px 0 15px;
+}
+
+body main #projects .grid-projects .card-project div .card-etiquetas {
+    display: flex;
+    flex-direction: row;
+    height: 25px;
+    padding: 0;
+    margin: 0;
+    justify-content: space-between;
+}
+
+body main #projects .grid-projects .card-project div .divider-project {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+body main #projects .grid-projects .card-project .img-project {
+    width: 100%;
+}
+
+body main #personal-info {
+    height: 1000px;
+    padding-top: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+body main #personal-info article {
+    height: 340px;
+    display: flex;
+    flex-direction: column;
+}
+
+body main #personal-info article #contact-me {
+    display: flex;
+    flex-direction: column;
+    background-color: #3300cc;
+    height: 260px;
+    padding-top: 40px;
+    padding-bottom: 20px;
+}
+
+body main #personal-info article #contact-me .description {
+    height: 150px;
+}
+
+body main #personal-info article #contact-me .sm-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 70px;
+    padding-left: 40px;
+}
+
+body main #personal-info article #contact-me .sm-card .sm-group {
+    height: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: 15px;
+}
+
+body main .sm-icon {
+    width: 6%;
+}
+
+body main .sm-link {
+    text-decoration: none;
+}
+
+body main .sm-link:hover {
+    color: #ee6a5b;
+}
+
+body main #personal-info article #contact-me .description > h3 {
+    color: #dfd8ce;
+}
+
+body main #personal-info article #contact-me .description > p {
+    color: #dfd8ce;
+}
+
+body main #personal-info article #contact-me .sm-card .sm-1 > p {
+    color: #dfd8ce;
+}
+
+body main #personal-info article #contact-me-img {
+    display: none;
+}
+
+body main #personal-info form {
+    padding: 20px 20px 20px 40px;
+    height: 600px;
+    background-color: #dfd8ce;
+    display: flex;
+    flex-direction: column;
+}
+
+body main #personal-info form #form-card {
+    padding: 40px 20px 0 0;
+    height: 500px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+body main #personal-info form #form-card .form-inputs {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 20px;
+    gap: 2px;
+}
+
+body main #personal-info form #form-card .form-inputs .input-style {
+    height: 25px;
+    border: none;
+    border-bottom: 2px solid #3300cc;
+    padding: 5px 10px 0px 10px;
+    background-color: transparent;
+    outline: none;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    color: #3300cc;
+}
+
+body main #personal-info form #form-card .form-inputs .input-style::placeholder {
+    color: #8e7fcc;
+}
+
+body main #personal-info form #form-card .form-inputs .input-style:hover {
+    border-bottom: 2px solid #ee6a5b ;
+}
+
+body main  #personal-info form label {
+    font-family: "Montserrat", sans-serif;
+    color: #3300cc;
+    font-size: 14px;
+}
+
+body main .personal-info form #form-card #submit {
+    padding-top: 10px;
+}
+ 
+body main #personal-info form #form-card .form-inputs textarea {
+    border: #3300cc 2px solid;
+    margin-top: 15px;
+    padding: 10px 10px 5px 10px;
+    background-color: transparent;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 600;
+    color: #3300cc;
+    outline: none;
+}
+
+body main #personal-info form #form-card .form-inputs textarea:hover {
+    border: #ee6a5b 2px solid;
+}
+
+body main #personal-info form #form-card .form-inputs form-inputs .container-text-area {
+    margin-top: 50px;
+}
+
+body footer {
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    padding: 40px 40px 5px 40px;
+    background-color: #3300cc;
+}
+
+body footer #footer-img {
+    background-image: url("../svg/eye.svg");
+    background-repeat: no-repeat;
+    width: 40%;
+    margin-bottom: 20px;
+}
+
+body footer div {
+    margin-top: 20px;
+    display: flex;
+    height: 50px;
+}
+
+body footer div a {
+    width: 50px;
+}
+
+body footer div a img {
+    width: 40%;
+}
+
+body footer p {
+    margin-top: 50px;
+}
+
+body footer > h3 {
+    color: #dfd8ce;
+}
+/* ----------------------------------------------------Fin mobile first-------------------------------------------------------- */
+
+/* ----------------------------------------------------Inicio media queries---------------------------------------------------- */
+@media (min-width: 768px) {
+
+    body {
+        width: 100vw;
+    }
+    
+    body header {
+        padding: 0px 40px 0px 40px;
+        height: 120px;
+        display: flex;
+        flex-wrap: wrap;
+        align-content: center;
+        align-items: baseline;
+    }
+
+    body header h1 {
+        width: 30%;
+        font-size: 60px;
+    }
+    
+    body header nav {
+        width: 60%;
+        display: flex;
+        justify-content: flex-end;
+        align-items: baseline;
+    }
+
+    body header #img-nav-divider {
+        width: 10%;
+        display: flex;
+    }
+    
+    body header nav ul {
+        display: flex;
+        color: #3300cc;
+        list-style: none;
+        gap: 15px;
+    }
+
+    body header nav ul li .nav-style {
+        color: #3300cc;
+        font-family: "Montserrat", sans-serif;
+        font-weight: 800;
+        text-decoration: none;
+    }
+
+    body header nav ul li .nav-style:hover {
+        color: #ee6a5b;
+    }
+
+    body header nav ul li .nav-style:active {
+        color: #ee6a5b;
+    }
+
+    body header nav img {
+        display: none;
+    }
+    
+    body main .hero {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        height: 500px;
+    }
+
+    body main .hero #hero-img {
+        width: 50%;
+        height: 100%;
+    }
+    
+    body main .hero article {
+        width: 46%;
+        align-items: flex-end;
+        padding: 0 0 40px 0px;
+    }
+
+    body main .hero article > img {
+        display: flex;
+        width: 50%;
+    }
+
+    body main .hero article > p {
+        text-align: right;
+        width: 80%;
+    }
+    
+    body main .quote {
+        height: 250px;
+        padding: 30px 50px 30px 50px;
+        text-align: center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;        
+    }
+
+    body main .quote > p {
+        display: none;
+    }
+    
+    body main .divider {
+        width: 10%;
+    }
+
+    body main #what-i-know {
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    body main .description {
+        height: 150px;
+        padding: 10px 120px 10px 40px;
+    }
+    
+    body main #what-i-know .grid-know {
+        padding: 0 40px 0 40px;
+        display: flex;
+        flex-wrap: wrap;
+        width: 90%;
+        justify-content: space-between;
+    }
+
+    body main #what-i-know .grid-know .img-know {
+        width: 23%;
+    }
+
+    body main #what-i-know .grid-know .three {
+        order: 4;
+    }
+
+    body main #what-i-know .grid-know .four {
+        order: 6;
+    }
+
+    body main #projects {
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    body main #projects .grid-projects {
+        height: fit-content;
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        align-content: flex-start;
+        justify-content: space-around;
+    }
+        
+    body main #projects .grid-projects .card-project {
+        width: 300px;
+        height: 400px;
+    }
+
+    body main #personal-info {
+        height: fit-content;
+    }
+    
+    body main #personal-info article {
+        width: 100%;
+        height: 400px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    body main #personal-info article #contact-me {
+        background-color: #3300cc;
+        height: 400px;
+        width: 45%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    body main #personal-info article #contact-me-img {
+        display: flex;
+        background-image: url("../img/Recurso\ 19.png");
+        width: 55%;
+        background-size: cover;
+    }
+
+    body main .sm-icon {
+        width: 4%;
+    }
+
+    body main #personal-info form {
+        margin-top: 20px;
+        height: 500px;
+    }
+
+    body main #personal-info form #form-card div .form-inputs {
+        width: 47%;
+    }
+
+    body main #personal-info form #form-card #submit {
+        justify-content: flex-end;
+    }
+
+    body main #personal-info form #form-card div {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+    body footer {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        align-items: center;
+    }
+
+    body footer #footer-img {
+        background-image: url("../svg/double-eye.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+    body footer div {
+        align-items: flex-end;
+    }
+
+    body footer div a {
+        align-content: center;
+        text-align: center;
+    }
+}
+
+@media (min-width: 1025px)  {
+
+    h1 {
+        font-size: 80px;
+    }
+    
+    h2 {
+        font-size: 40px;
+    }
+    
+    h3 {
+        font-size: 35px;
+    }
+    
+    p {
+        font-size: 16px;
+    }
+    
+    a {
+        font-size: 14px;
+    }
+    
+    body {
+        width: 100vw;
+    }
+
+    body header h1 {
+        width: 30%;
+    }
+    
+    body header nav {
+        width: 50%;
+    }
+
+    body header nav img {
+        display: none;
+    }
+    
+    body main .hero {
+        height: 600px;
+    }
+
+    body main .quote {
+        height: 250px;
+        padding: 30px 100px 30px 100px;
+    }
+
+    body main .description {
+        height: 150px;
+        padding: 10px 120px 10px 40px;
+    }
+    
+    body main #what-i-know .grid-know {
+        width: 92%;
+    }
+
+    body main #projects {
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    body main #projects .grid-projects {
+        margin: 40px;
+        justify-content: center;
+        gap: 15px;
+    }     
+}
+
+@media (min-width: 1921px) {
+
+    h2 {
+        font-size: 60px;
+    }
+    
+    h3 {
+        font-size: 50px;
+    }
+
+    h4 {
+        font-size: 35px;
+    }
+    
+    p {
+        font-size: 24px;
+    }
+    
+    a {
+        font-size: 24px;
+    }
+
+    span {
+        font-size: 24px;
+    }
+
+    body {
+        width: 100vw;
+    }
+
+    body header {
+        padding: 0px 80px 0px 80px;
+        height: 200px;
+    }
+
+    body header h1 {
+        width: 30%;
+        font-size: 90px;
+    }
+    
+    body header nav {
+        width: 60%;
+    }
+
+    body header nav #img-nav {
+        display: flex;
+        width: 5%;
+    }
+    
+    body header nav ul {
+        gap: 45px;
+    }
+
+    body header nav ul li .nav-style {
+        font-size: 24px;
+    }
+
+    body main .hero {
+        height: 700px;
+    }
+
+    body main .hero article {
+        width: 46%;
+        align-items: flex-end;
+        padding: 0 0 40px 0px;
+    }
+
+    body main .hero article > img {
+        display: flex;
+        width: 50%;
+    }
+
+    body main .hero article > p {
+        text-align: right;
+        width: 80%;
+        margin-bottom: 100px;
+    }
+
+    body main .button-style {
+        width: 200px;
+        height: 60px;
+        border-radius: 30px;
+        font-size: 20px;
+    }
+    
+    body main .quote {
+        height: 400px;
+        padding: 30px 150px 30px 150px;
+    }
+    
+    body main .divider {
+        display: none;
+    }
+
+    body main .description {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 250px;
+        margin-top: 100px;
+        padding: 10px 200px 10px 200px;
+    }
+
+    body main .description > p {
+        text-align: center;
+    }
+    
+    body main #what-i-know .grid-know {
+        width: 70%;
+        gap: 15px;
+    }
+
+    body main #what-i-know .grid-know .img-know {
+        width: 20%;
+    }
+
+    body main #projects .grid-projects .card-project {
+        width: 500px;
+        height: 650px;
+    }
+
+    body main #projects .grid-projects .card-project div .divider-project {
+        margin-top: 15px;
+        margin-bottom: 20px;
+    }
+
+    body main #personal-info {
+        height: fit-content;
+    }
+    
+    body main #personal-info article {
+        height: 710px;
+    }
+
+    body main #personal-info article #contact-me {
+        height: 650px;
+        width: 40%;
+    }
+
+    body main #personal-info article #contact-me > .description {
+        height: 150px;
+        align-items: flex-start;
+        padding: 10px 80px 10px 80px;
+    }
+
+    body main #personal-info article #contact-me .description > p {
+        text-align: left;
+    }
+
+    body main #personal-info article #contact-me .sm-card {
+        padding-left: 80px;
+        height: 130px;
+    }
+
+    body main #personal-info article #contact-me .sm-card .sm-group {
+        height: 60px;
+    }
+
+    body main #personal-info article #contact-me-img {
+        width: 60%;
+    }
+
+    body main .sm-icon {
+        width: 4%;
+    }
+
+    body main #personal-info form {
+        padding: 20px 80px 20px 80px;
+        margin-top: 20px;
+        height: 600px;
+    }
+
+    body main  #personal-info form label {
+        font-size: 20px;
+    }
+
+    body main #personal-info form #form-card div .form-inputs {
+        width: 47%;
+    }
+
+    body main #personal-info form #form-card .form-inputs .input-style {
+        font-size: 20px;
+    }
+}
+/* ------------------------------------------------------Fin media queries----------------------------------------------------- */

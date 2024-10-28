@@ -10,18 +10,228 @@
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="./public/css/style.css">
+    <link rel="shortcut icon" href="./public/img/favicon.ico" type="image/x-icon">
 </head>
 
 <body>
+
+    <!-- comienza codigo del header -->
+    <header>
+        <h1>Hello,</h1>
+        <img id="img-nav-divider" src="./public/svg/Recurso-23.svg" alt="decorative">
+        <nav>
+            <img src="./public/svg/menu.svg" alt="menu-icon">
+            <ul>
+                <li><a class="nav-style" href="#what-i-know">WHAT I KNOW</a></li>
+                <li><a class="nav-style" href="#projects">PROJECTS</a></li>
+                <li><a class="nav-style" href="#personal-info">CONTACT ME</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- termina codigo del header -->
+
+    <!-- Comienza codigo del main -->
     <main>
-        <header></header>
-        <section class="hero"></section>
-        <section class="quote"></section>
-        <section class="what-i-know"></section>
-        <section class="my-projects"></section>
-        <section class="personal-info"></section>
-        <footer></footer>   
+        <section class="hero">
+            <div id="hero-img"></div>
+            <article>
+                <h3>I'm Sara Arredondo</h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                    laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam.
+                </p>
+                <a href="#projects">
+                    <button class="button-style">MY WORK</button>
+                </a>
+            </article>
+        </section>
+        <section class="quote">
+            <h2>
+                <em>"Simplicity </em>
+                in design is not sign of a bad design. It's better because it focuses on the
+                <em>essentials."</em>
+            </h2>
+            <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                laoreet dolore magna aliquam erat volutpat. Ut wisi enim.
+            </p>
+        </section>
+
+        <!-- divisor entre secciones -->
+        <img class="divider" src="./public/svg/line-1.svg" alt="decorative">
+        <!-- divisor entre secciones -->
+
+        <section id="what-i-know">
+            <div class="description">
+                <h3>What I know</h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                    laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                    ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel.
+                </p>
+            </div>
+            <div class="grid-know">
+                <img class="img-know one" src="./public/svg/know-1-html.svg" alt="html">
+                <img class="img-know two" src="./public/svg/know-2-decorative.svg" alt="decorative">
+                <img class="img-know three" src="./public/svg/know-2-decorative.svg" alt="decorative">
+                <img class="img-know four " src="./public/svg/know3-java.svg" alt="javascript">
+                <img class="img-know five" src="./public/svg/know4-visual.svg" alt="visual design">
+                <img class="img-know six" src="./public/svg/know-2-decorative.svg" alt="decorative">
+                <img class="img-know seven" src="./public/svg/know-2-decorative.svg" alt="decorative">
+                <img class="img-know eigth" src="./public/svg/know-5-illus.svg" alt="illustration">
+            </div>
+        </section>
+
+        <!-- divisor entre secciones -->
+        <img class="divider" src="./public/svg/line-1.svg" alt="decorative">
+        <!-- divisor entre secciones -->
+
+        <section id="projects">
+            <div class="description">
+                <h3>Projects</h3>
+                <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
+                    laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation
+                    ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel.
+                </p>
+            </div>
+            <div class="grid-projects">
+                <article class="card-project">
+                    <img class="img-project" src="./public/img/project-2.png" alt="logotipo from away">
+                    <div>
+                        <div class="card-etiquetas">
+                            <span>Branding</span>
+                            <span>2022</span>
+                        </div>
+                        <img class="divider-project" src="./public/svg/line-2.svg" alt="decorative">
+                        <a href="https://www.instagram.com/inesbarracuda/"></a>
+                        <h4>From Away Films</h4>
+                    </div>
+                </article>
+                <article class="card-project">
+                    <img class="img-project" src="./public/img/project-1.png" alt="pañoleta azul ilustrada">
+                    <div>
+                        <div class="card-etiquetas">
+                            <span>Illustration</span>
+                            <span>2024</span>
+                        </div>
+                        <img class="divider-project" src="./public/svg/line-2.svg" alt="decorative">
+                        <h4>Ines Barracuda</h4>
+                    </div>
+                </article>
+                <article class="card-project">
+                    <img class="img-project" src="./public/img/project-3.png" alt="ilustracion de guerra en colombia">
+                    <div>
+                        <div class="card-etiquetas">
+                            <span>Editorial</span>
+                            <span>2024</span>
+                        </div>
+                        <img class="divider-project" src="./public/svg/line-2.svg" alt="decorative">
+                        <h4>Baudó AP</h4>
+                    </div>
+                </article>
+                <article class="card-project">
+                    <img class="img-project" src="./public/img/project-4.png" alt="Poster de Catapum">
+                    <div>
+                        <div class="card-etiquetas">
+                            <span>Films</span>
+                            <span>2024</span>
+                        </div>
+                        <img class="divider-project" src="./public/svg/line-2.svg" alt="decorative">
+                        <h4>Catapum | Briosa</h4>
+                    </div>
+                </article>
+                <article class="card-project">
+                    <img class="img-project" src="./public/img/project-5.png" alt="libro escenarios">
+                    <div>
+                        <div class="card-etiquetas">
+                            <span>Editorial</span>
+                            <span>2024</span>
+                        </div>
+                        <img class="divider-project" src="./public/svg/line-2.svg" alt="decorative">
+                        <h4>Escenarios | Querida</h4>
+                    </div>
+                </article>
+                <article class="card-project">
+                    <img class="img-project" src="./public/img/project-6.png" alt="poster de pelicula La Niebla de la Paz">
+                    <div>
+                        <div class="card-etiquetas">
+                            <span>Editorial</span>
+                            <span>2024</span>
+                        </div>
+                        <img class="divider-project" src="./public/svg/line-2.svg" alt="decorative">
+                        <h4>Niebla | Briosa</h4>
+                    </div>
+                </article>
+            </div>
+        </section>
+        <section id="personal-info">
+            <article>
+                <div id="contact-me">
+                    <div class="description">
+                        <h3>Contact me</h3>
+                        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod
+                            tincidunt ut.
+                        </p>
+                    </div>
+                    <div class="sm-card">
+                        <div class="sm-group">
+                            <img class="sm-icon" src="./public/svg/noun-instagram-6204297.svg" alt="logo instagram">
+                            <a class="sm-link" href="https://www.instagram.com/inesbarracuda/">@inesbarracuda</a>
+                        </div>
+                        <div class="sm-group">
+                            <img class="sm-icon" src="./public/svg/noun-discord-6518134.svg" alt="logo discord">
+                            <a class="sm-link" href="https://www.instagram.com/inesbarracuda/">@inesbarracuda</a>
+                        </div>
+                    </div>
+                </div>
+                <div id="contact-me-img">
+                </div>
+            </article>
+            <form>
+                <h3>Let's work together!</h3>
+                <div id="form-card">
+                    <div>
+                        <div class="form-inputs">
+                            <label for="name">Name*</label>
+                            <input class="input-style" type="text" placeholder="Antonia" name="name" required>
+                        </div>
+                        <div class="form-inputs">
+                            <label for="lastname">Last name*</label>
+                            <input class="input-style" placeholder="López" name="lastname" type="text" required>
+                        </div>
+                    </div>
+                    <div class="form-inputs">
+                        <label for="email">Your email*</label>
+                        <input class="input-style" placeholder="hola@gmail.com" name="email" type="email" required>
+                    </div>
+                    <div class="form-inputs container-text-area">
+                        <label for="message">Your message*</label>
+                        <textarea name="comment" rows="8"></textarea>
+                    </div>
+                    <div id="submit">
+                        <input class="button-style" type="submit" value="SEND">
+                    </div>
+                </div>
+            </form>
+        </section>
     </main>
+    <!-- Termina codigo del main -->
+
+    <!-- Comienza codigo del footer -->
+    <footer>
+        <div id="footer-img"></div>
+        <h3>Lorem ipsum dolor sit amet</h3>
+        <div>
+            <a href="https://www.instagram.com/inesbarracuda/">
+                <img src="./public/svg/noun-instagram-6204297.svg" alt="instagram">
+            </a>
+            <a href="https://www.instagram.com/inesbarracuda/">
+                <img src="./public/svg/noun-discord-6518134.svg" alt="discord">
+            </a>
+            <a href="https://www.instagram.com/inesbarracuda/">
+                <img src="./public/svg/noun-instagram-6204297.svg" alt="instagram">
+            </a>
+        </div>
+        <h5>By Sara Arredondo</h5>
+    </footer>
+    <!-- Termina codigo del footer -->
 </body>
 
 </html>
